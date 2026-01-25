@@ -4,9 +4,9 @@ class Solution:
         curr = head
         
         while curr:
-            next_node = curr.next  # Temporarily store the next node
-            curr.next = prev       # Reverse the current node's pointer
-            prev = curr            # Move prev one step forward
-            curr = next_node       # Move curr one step forward
+            next_node = curr.next  
+            curr.next = prev       
+            prev = curr            
+            curr = next_node      
             
         return prev
